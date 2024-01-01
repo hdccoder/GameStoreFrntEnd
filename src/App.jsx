@@ -6,7 +6,7 @@ import AllVGames from './components/VideoGames'
 import SingleVGame from './components/SingleVGame'
 import AllBoardG from './components/Boardgames'
 import SingleBGame from './components/SingleBGame'
-import NavBar from './components/Navbar'
+
 
 import './App.css'
 
@@ -46,9 +46,9 @@ function App() {
   return (
    
     <div>
-     <NavBar/>
+   
     <Routes>
-      <Route path='/' element={<Homepage allVideoGames={allVideoGames}/>}/>
+      <Route path='/' element={<Homepage allVideoGames={allVideoGames} allBoardGames={allBoardGames}/>}/>
       <Route path='/videogames' element={<AllVGames allVideoGames={allVideoGames}/>}/>
       <Route path='/videogames/:id' element={<SingleVGame allVideoGames={allVideoGames}/>}/>
       <Route path='/boardgames' element={<AllBoardG allBoardGames={allBoardGames}/>}/>

@@ -16,6 +16,7 @@ const AllBoardG = ({allBoardGames}) => {
         })
       }
       </ul>
+      <div>  <Link to='/'>Back to Home</Link></div>
         </div>
     )
 }

@@ -1,4 +1,33 @@
 .vidpic {width: 620px; height: 420px;padding-left: .2%;}
 .brdpic {width: 420px; height: 420px;padding-left: .2%}
+body {background-image: url(images/pexels-erik-mclean-7360387.jpg);background-attachment: fixed;background-size: cover;}
+
+a{
+  padding: 1rem;
+  font-family: fantasy;
+  font-size: 250%;
+  color:  rgb(213, 65, 24);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(127, 232, 255);
+}
+
+.snglebrd {background-color: rgba(127, 232, 255, 0.465);}
+
+.snglgm {background-color: rgba(127, 232, 255, 0.465);}
+
+.hmpg {display: flex;justify-content: center;padding-top: 10%;}
+
+h2 { font-family: fantasy;
+  color:   rgb(213, 65, 24)}
+
+h3 {font-family: fantasy;
+  color:   rgb(213, 65, 24)}
+
+h1 { font-family: fantasy;
+  font-size: 150%;
+  color:   rgb(213, 65, 24)};
 
 

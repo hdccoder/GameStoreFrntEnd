@@ -1,9 +1,11 @@
+import {Link} from "react-router-dom"
 
-const Homepage = ({allVideoGames}) => {
+
+const Homepage = ({allVideoGames, allBoardGames}) => {
     return(
 
-        <div>
-<           h1>Best VideoGames - {allVideoGames.length}</h1>
+        <div className="hmpg">
+        <h1>Top {allVideoGames.length}   <Link to='/videogames'>Videogames</Link> & Top {allBoardGames.length}    <Link to='/boardgames'>Boardgames</Link> of 2023 </h1>
         </div>
     )
 }

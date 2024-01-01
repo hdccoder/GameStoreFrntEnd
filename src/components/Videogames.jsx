@@ -12,10 +12,12 @@ const AllVGames = ({allVideoGames}) => {
                 <Link key={vidGame.id} to={`/videogames/${vidGame.id}`}>
                     <li >{vidGame.name}</li>
                 </Link>
+                
          )
         })
       }
       </ul>
+      <div>  <Link to='/'>Back to Home</Link></div>
         </div>
     )
 }
