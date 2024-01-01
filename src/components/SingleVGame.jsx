@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import axios from "axios"
+
 
 const SingleVGame = ({allVideoGames}) => {
     const params = useParams()
@@ -9,7 +9,7 @@ const SingleVGame = ({allVideoGames}) => {
         return vidGame.id === id
     })
 
-    if (!SingleVGame){
+    if (!singleVGame){
         return null
     }
     return(

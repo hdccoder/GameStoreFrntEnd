@@ -4,13 +4,15 @@ import {Route, Routes, Link} from 'react-router-dom'
 import Homepage from './components/Homepage'
 import AllVGames from './components/VideoGames'
 import SingleVGame from './components/SingleVGame'
+import AllBoardG from './components/Boardgames'
+import SingleBGame from './components/SingleBGame'
 import NavBar from './components/Navbar'
 
 import './App.css'
 
 function App() {
   const [allVideoGames, setAllVideoGames] = useState([])
-
+  const [allBoardGames, setAllBoardGames] = useState([])
   useEffect(() => {
     const fetchVideos = async () => {
       const {data} = await axios.get('http://localhost:3089/api/videogames')
@@ -18,6 +20,15 @@ function App() {
       setAllVideoGames(data)
     }
     fetchVideos()
+  },[])
+
+  useEffect(() => {
+    const fetchBoards = async () => {
+      const {data} = await axios.get('http://localhost:3089/api/boardgames')
+      console.log(data)
+      setAllBoardGames(data)
+    }
+    fetchBoards()
   },[])
 
   const deleteVid = async (vidGamez) => {
@@ -40,6 +51,8 @@ function App() {
       <Route path='/' element={<Homepage allVideoGames={allVideoGames}/>}/>
       <Route path='/videogames' element={<AllVGames allVideoGames={allVideoGames}/>}/>
       <Route path='/videogames/:id' element={<SingleVGame allVideoGames={allVideoGames}/>}/>
+      <Route path='/boardgames' element={<AllBoardG allBoardGames={allBoardGames}/>}/>
+      <Route path='/boardgames/:id' element={<SingleBGame allBoardGames={allBoardGames}/>}/>
     </Routes>
       </div>
   )
