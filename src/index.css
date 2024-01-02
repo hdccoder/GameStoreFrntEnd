@@ -11,14 +11,14 @@ a{
 }
 
 a:hover {
-  color: rgb(127, 232, 255);
+  color: rgb(199, 222, 228); 
 }
 
 .snglebrd {background-color: rgba(127, 232, 255, 0.465);}
 
 .snglgm {background-color: rgba(127, 232, 255, 0.465);}
 
-.hmpg {display: flex;justify-content: center;padding-top: 10%;}
+.header {display: flex;justify-content: center;padding-top: 10%;}
 
 h2 { font-family: fantasy;
   color:   rgb(213, 65, 24)}
@@ -29,5 +29,25 @@ h3 {font-family: fantasy;
 h1 { font-family: fantasy;
   font-size: 150%;
   color:   rgb(213, 65, 24)};
+
+  .column {
+    display: flex;
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  .left {
+    width: 25%;
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+  }
+  
+  .right {
+    width: 75%;
+    padding-left: 65%;
+  }
 
 
